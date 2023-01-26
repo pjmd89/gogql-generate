@@ -3,7 +3,7 @@ package main
 ///*
 import (
 	"flag"
-	"fmt"
+	"os/exec"
 
 	"github.com/pjmd89/gogql/cmd/authorization"
 	"github.com/pjmd89/gogql/cmd/newproject"
@@ -30,7 +30,10 @@ func main() {
 	gqlGenerate := generate.NewGqlGenerate(gql.GetSchema(), schema)
 	newproject.Generate(gqlGenerate, driver(driverDB))
 	authorization.Generate(gqlGenerate)
-	fmt.Println(gql, gqlGenerate)
+	exec.Command("go get -d github.com/pjmd89/gogql").Run()
+	exec.Command("go get -d github.com/pjmd89/goutils").Run()
+	exec.Command("go get -d github.com/pjmd89/mongomodel").Run()
+	exec.Command("go mod tidy && go mod vendor").Run()
 }
 func driver(driverDB string) (r gqltypes.DriverDB) {
 	switch driverDB {
