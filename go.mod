@@ -1,4 +1,4 @@
-module gogql-generate
+module github.com/pjmd89/gogql-generate
 
 go 1.19
 
