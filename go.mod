@@ -3,7 +3,7 @@ module github.com/pjmd89/gogql-generate
 go 1.19
 
 require (
-	github.com/pjmd89/gogql v0.7.1-0.20230126195026-270a98a35b31
+	github.com/pjmd89/gogql v0.13.2
 	github.com/pjmd89/goutils v1.0.0
 )
 
