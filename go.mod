@@ -1,10 +1,12 @@
 module github.com/pjmd89/gogql-generate
 
-go 1.19
+go 1.21
+
+toolchain go1.24.1
 
 require (
-	github.com/pjmd89/gogql v0.13.2
-	github.com/pjmd89/goutils v1.0.0
+	github.com/pjmd89/gogql v0.16.2
+	github.com/pjmd89/goutils v1.1.0
 )
 
 require (
@@ -17,7 +19,6 @@ require (
 	github.com/gorilla/websocket v1.5.0 // indirect
 	github.com/jinzhu/copier v0.3.5 // indirect
 	github.com/pjmd89/gqlparser/v2 v2.2.1-0.20220330002356-e1babba1695a // indirect
-	github.com/rs/xid v1.4.0 // indirect
 	go.mongodb.org/mongo-driver v1.10.2 // indirect
 	golang.org/x/crypto v0.0.0-20220829220503-c86fa9a7ed90 // indirect
 	golang.org/x/exp v0.0.0-20220722155223-a9213eeb770e // indirect
