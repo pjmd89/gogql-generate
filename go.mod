@@ -5,7 +5,7 @@ go 1.21
 toolchain go1.24.1
 
 require (
-	github.com/pjmd89/gogql v0.16.3
+	github.com/pjmd89/gogql v0.16.4
 	github.com/pjmd89/goutils v1.1.0
 )
 
